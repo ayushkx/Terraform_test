@@ -13,13 +13,13 @@ provider "aws" {
   secret_key = var.Secret_key_aws
 }
 
-resource "aws_instance" "swanand-instance" {
-        ami = var.ami-id
-        instance_type = var.instance-type
-        availability_zone = var.az
+resource "aws_instance" "RHEL_AMI" {
+        ami = "ami-0c15e602d3d6c6c4a"
+        instance_type = "t2.micro"
+        availability_zone = "us-east-1a"
         key_name = "ayush_terraform"
         tags = {
-                Name = var.instance-name
+                Name = "RHEL_AMI"
 }
 }
 
