@@ -1,4 +1,13 @@
+variable "Secret_key_aws" {
+        type = string
+        description = "Enter the value"   
+}
 
+variable "Access_key_aws" {
+        type = string
+        description = "Enter the value"
+     
+}
 
 variable "ami-id" {
         type = string
