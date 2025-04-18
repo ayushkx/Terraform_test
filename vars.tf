@@ -1,7 +1,4 @@
-variable "instance-name" {
-        type = string
-        description = "Enter a name for the instance"
-}
+
 
 variable "ami-id" {
         type = string
@@ -15,8 +12,4 @@ variable "instance-type" {
         default = "t2.micro"
 }
 
-variable "az" {
-        type = string
-        description = "Enter a AZ where instances should be created"
-}
 
